@@ -22,10 +22,8 @@ The website is designated for gamers teaming-up and gaming tournaments
 
 my plan was simple, test every input field and url parameter for XSS and low-hanging fruits.
 
-  
 **BUG COUNTER = 0**
 
-  
 starting with the search feature, used a simple payload to check what to get `"><iframe%20src=x>` and that gave me a CloudFront WAF
 
 ![](https://cdn.hashnode.com/res/hashnode/image/upload/v1680114054718/3aaef2fc-c8d0-4449-8376-7070a2164354.png align="center")
@@ -65,7 +63,7 @@ pasted the same payload, and we got another hit! and needs no user interaction, 
 
 **SEVERITY = <mark>HIGH</mark>**
 
-went to the comment section of a post, pasted the payload and boom that's another hit again!
+went to the comment section of a post, pasted the payload and that's another hit again!
 
 **BUG COUNTER = 3**
 
